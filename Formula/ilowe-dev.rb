@@ -1,4 +1,4 @@
-class ILoweDev < Formula
+class IloweDev < Formula
   desc "A formula that pulls in my dev environment"
   homepage ""
 
