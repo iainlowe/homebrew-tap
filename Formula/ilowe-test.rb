@@ -5,20 +5,20 @@
 class IloweTest < Formula
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Darwin_x86_64.tar.gz"
-      sha256 "4999ddf3fc2c345260dad57cfc928a22b5cd6175fa0db47af29b88dc9d2c49dc"
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.4.0/ilowe-test_0.4.0_Darwin_x86_64.tar.gz"
+      sha256 "36279b7d942b30e378206951ccb5d707fa3b0f928c3272424c8127f8bbeb300e"
 
       def install
         bin.install "ilowe-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Darwin_arm64.tar.gz"
-      sha256 "7a57abdeb58c6e75b4509022d5335b9f00bbb9d8b428eb620cd032f238cc33de"
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.4.0/ilowe-test_0.4.0_Darwin_arm64.tar.gz"
+      sha256 "d1dc8073221fcfaf039a2bbb6650843ab54ee9f28453f879cf407b3e345fd442"
 
       def install
         bin.install "ilowe-test"
@@ -28,16 +28,16 @@ class IloweTest < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "97f65216c06c9a187089549b9b9df66fc442bb6b2911f463531c30d9004f5416"
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.4.0/ilowe-test_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "d3bceaa94d33a1784f3c245b03623fa132efe356b6631f569409d418e86d44d7"
 
       def install
         bin.install "ilowe-test"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Linux_arm64.tar.gz"
-      sha256 "00f741e5fe4c9428c8cba2c91b5365e802e8e5fdbbdcb82133e12adee8c0109c"
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.4.0/ilowe-test_0.4.0_Linux_arm64.tar.gz"
+      sha256 "7f9da69c67e42ca043e0c542f0596fce3980882731401cbfe112b13c6b31f45a"
 
       def install
         bin.install "ilowe-test"
