@@ -5,20 +5,20 @@
 class IloweTest < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.3.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.1.1/ilowe-test_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "9e6237cfccc01a401f5e3b728afe7379d744cb035064170c38fd24adafcd92e8"
+    if Hardware::CPU.intel?
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Darwin_x86_64.tar.gz"
+      sha256 "4999ddf3fc2c345260dad57cfc928a22b5cd6175fa0db47af29b88dc9d2c49dc"
 
       def install
         bin.install "ilowe-test"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.1.1/ilowe-test_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "4e8d76552f7fa1cdd8665aab5541fba102c8fecfd1219b8ef665d055ab4e13dc"
+    if Hardware::CPU.arm?
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Darwin_arm64.tar.gz"
+      sha256 "7a57abdeb58c6e75b4509022d5335b9f00bbb9d8b428eb620cd032f238cc33de"
 
       def install
         bin.install "ilowe-test"
@@ -27,17 +27,17 @@ class IloweTest < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.1.1/ilowe-test_0.1.1_Linux_arm64.tar.gz"
-      sha256 "e9aed16affffd07de58c0adc0c409eb0a2633f0107f7d09fdb3a98f7976cbce4"
+    if Hardware::CPU.intel?
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "97f65216c06c9a187089549b9b9df66fc442bb6b2911f463531c30d9004f5416"
 
       def install
         bin.install "ilowe-test"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.1.1/ilowe-test_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "33e42ab3c23a9149259e7408b4980753573e046fe1afa64682c5d3757590f943"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/iainlowe/ilowe-test/releases/download/v0.3.0/ilowe-test_0.3.0_Linux_arm64.tar.gz"
+      sha256 "00f741e5fe4c9428c8cba2c91b5365e802e8e5fdbbdcb82133e12adee8c0109c"
 
       def install
         bin.install "ilowe-test"
